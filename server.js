@@ -263,7 +263,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`RUMC website running at http://localhost:${PORT}`);
   console.log("Demo admin: admin / admin123");
   console.log("Demo student: RUMC001 / student123");
