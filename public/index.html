@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="RUMC educational website demo">
+  <meta name="theme-color" content="#063b7a">
+  <title>RAJUK Uttara Model College | RUMC</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brandbox">
+      <div class="logo">RUMC</div>
+      <div><h1>RAJUK Uttara Model College</h1><p>রাজউক উত্তরা মডেল কলেজ</p></div>
+    </div>
+    <div class="motto">Education for Humanization<br><small>মানুষ হওয়ার জন্য শিক্ষা</small></div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="navbrand" href="#home">RUMC</a>
+    <button id="menuBtn" class="menu-btn">☰</button>
+    <div id="navLinks" class="navlinks">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#academics">Academics</a>
+      <a href="#notices">Notices</a><a href="#events">Events</a><a href="#gallery">Gallery</a>
+      <a href="#admission">Admission</a><a href="#portal">Portal</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <span class="eyebrow">WELCOME TO RUMC</span>
+    <h2>Education. Discipline. Excellence.</h2>
+    <p>A modern college website foundation with notices, admission applications, student results and an admin dashboard.</p>
+    <div class="actions"><a class="btn gold" href="#admission">Admission Enquiry</a><a class="btn outline" href="#about">Explore</a></div>
+  </div>
+</section>
+
+<section class="quick">
+  <div class="wrap quick-grid">
+    <div>🎓 <b>Education</b><small>Secondary & Higher Secondary</small></div>
+    <div>📚 <b>Curriculum</b><small>Bengali & English Versions</small></div>
+    <div>🏆 <b>Excellence</b><small>Academic & Co-curricular</small></div>
+    <div>📍 <b>Location</b><small>Uttara, Dhaka</small></div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="heading"><span>ABOUT RUMC</span><h2>A Tradition of Excellence</h2><p>Core information presented as editable website content.</p></div>
+    <div class="about-grid">
+      <article><h3>About The College</h3>
+        <p>RAJUK Uttara Model College is a well-known educational institution located in Uttara, Dhaka.</p>
+        <p>This project is a full-stack website foundation. Institutional facts, contacts, admission rules and official branding should be verified before public deployment.</p>
+      </article>
+      <div class="stats">
+        <div><b>1994</b><small>Established</small></div><div><b>VI–XII</b><small>Grades</small></div>
+        <div><b>108573</b><small>EIIN</small></div><div><b>2</b><small>Shifts</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="academics" class="section alt">
+  <div class="wrap"><div class="heading"><span>ACADEMICS</span><h2>Learning & Development</h2></div>
+    <div class="cards">
+      <article><div class="icon">📖</div><h3>Secondary Education</h3><p>Strong academic foundations and structured learning.</p></article>
+      <article><div class="icon">🎓</div><h3>Higher Secondary</h3><p>Preparation for university and professional education.</p></article>
+      <article><div class="icon">🧠</div><h3>Co-curricular Activities</h3><p>Leadership, creativity, teamwork and personal development.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="notices" class="section">
+  <div class="wrap"><div class="heading"><span>NOTICE BOARD</span><h2>Latest Notices</h2></div><div id="noticeList" class="list">Loading...</div></div>
+</section>
+
+<section id="events" class="section alt">
+  <div class="wrap"><div class="heading"><span>EVENTS</span><h2>Upcoming Events</h2></div><div id="eventList" class="cards">Loading...</div></div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="wrap"><div class="heading"><span>GALLERY</span><h2>Campus Highlights</h2></div><div id="galleryGrid" class="gallery">Loading...</div></div>
+</section>
+
+<section id="admission" class="section admission">
+  <div class="wrap narrow"><div class="heading"><span>ADMISSIONS</span><h2>Submit an Enquiry</h2><p>Your submission will be stored in the server database.</p></div>
+    <form id="admissionForm" class="form">
+      <input name="student_name" placeholder="Student name *" required>
+      <input name="phone" placeholder="Phone number *" required>
+      <input name="email" type="email" placeholder="Email">
+      <select name="class_name"><option value="">Select class</option><option>VI</option><option>VII</option><option>VIII</option><option>IX</option><option>X</option><option>XI</option><option>XII</option></select>
+      <textarea name="message" placeholder="Your enquiry"></textarea>
+      <button class="btn gold" type="submit">Submit Application</button>
+      <p id="admissionMsg" class="msg"></p>
+    </form>
+  </div>
+</section>
+
+<section id="portal" class="section alt">
+  <div class="wrap narrow">
+    <div class="heading"><span>PORTAL</span><h2>Student / Admin Login</h2><p>Demo credentials are shown below for local testing only.</p></div>
+    <form id="loginForm" class="form">
+      <input id="username" placeholder="Username" required>
+      <input id="password" type="password" placeholder="Password" required>
+      <button class="btn primary" type="submit">Login</button>
+      <p id="loginMsg" class="msg"></p>
+    </form>
+    <div class="demo"><b>Admin:</b> admin / admin123 &nbsp; | &nbsp; <b>Student:</b> RUMC001 / student123</div>
+  </div>
+</section>
+
+<section id="dashboard" class="section hidden">
+  <div class="wrap"><div class="heading"><span>PORTAL</span><h2 id="dashTitle">Dashboard</h2></div><div id="dash"></div></div>
+</section>
+
+<section id="contact" class="section">
+  <div class="wrap"><div class="heading"><span>CONTACT</span><h2>Find Us</h2></div>
+    <div class="contact-grid">
+      <div><h3>Contact Information</h3><p>📍 Shahjalal Avenue, Sector-6, Uttara Model Town, Dhaka 1230, Bangladesh.</p><p>📞 +880-2-48957104</p><p>✉️ rumc1994@yahoo.com</p></div>
+      <iframe title="College map" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.77533878951!2d90.39952507596206!3d23.86216338450974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c4238e8ec43b%3A0xc6fb6947ed637ff0!2sRAJUK%20Uttara%20Model%20College!5e0!3m2!1sen!2sbd"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap footer-grid"><div><h3>RUMC</h3><p>Education for Humanization</p></div><div><b>Quick Links</b><a href="#about">About</a><a href="#notices">Notices</a><a href="#admission">Admission</a></div><div><b>Portal</b><a href="#portal">Student Login</a><a href="#portal">Admin Login</a></div></div><div class="copy">© <span id="year"></span> RUMC website project.</div></footer>
+<script src="/js/app.js"></script>
+</body>
+</html>
